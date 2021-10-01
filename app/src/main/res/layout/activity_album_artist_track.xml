@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AlbumArtistTrackActivity"
+    android:background="@color/colourBlack">
+
+    <LinearLayout
+        android:id="@+id/main4_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colourBlack"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher_play_blackwhite"
+            app:srcCompat="@mipmap/ic_launcher_play_blackwhite" />
+
+        <TextView
+            android:id="@+id/main4_tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Şarkılar"
+            android:textColor="@color/colourWhite"
+            android:textSize="50dp" />
+
+        <ImageButton
+            android:id="@+id/main4_stop"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="95dp"
+            android:background="@null"
+            android:src="@android:drawable/ic_media_pause" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main4_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main4_linear"
+        android:background="@color/colourBlack"
+        android:textColor="@color/colourWhite"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

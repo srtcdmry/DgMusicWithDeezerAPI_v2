@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/main_input"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:hint="Search.."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A8FFFFFF" />
+
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/colourBlack"
+        android:src="@drawable/pausebutton_foreground" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="11dp"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_search"
+        tools:src="@android:drawable/ic_menu_search" />
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_input"
+        android:background="@color/colourBlack"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_searchAlbum"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_2021_09_30_003910"
+            android:text="Albums"
+            tools:src="@drawable/screenshot_2021_09_30_003910" />
+
+        <ImageButton
+            android:id="@+id/btn_searchTrack"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_2021_09_30_004400"
+            android:text="Tracks"
+            tools:src="@drawable/screenshot_2021_09_30_004400" />
+
+        <ImageButton
+            android:id="@+id/btn_searchPlaylist"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_2021_09_30_004547"
+            tools:src="@drawable/screenshot_2021_09_30_004547" />
+
+        <ImageButton
+            android:id="@+id/btn_searchArtist"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_2021_09_30_004703"
+            android:text="Artist"
+            tools:src="@drawable/screenshot_2021_09_30_004703" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_linear"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="46dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
